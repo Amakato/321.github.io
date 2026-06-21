@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Internet Loader</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-4">
+
+<h2>Поиск по ключевому слову</h2>
+
+<input id="keyword" class="form-control">
+<button class="btn btn-primary mt-2" id="searchBtn">Поиск</button>
+
+<h4 class="mt-3">URL</h4>
+<select class="form-select" id="urlList"></select>
+
+<button class="btn btn-success mt-2" id="downloadBtn">Скачать</button>
+
+<div class="progress mt-3">
+<div class="progress-bar" id="bar" style="width:0%">0%</div>
+</div>
+
+<div id="status" class="mt-2"></div>
+
+<h4 class="mt-4">Сохранённый контент</h4>
+<select class="form-select" id="savedList"></select>
+
+<button class="btn btn-secondary mt-2" id="showBtn">Показать</button>
+
+<pre id="content"></pre>
+
+<script src="script.js"></script>
+</body>
+</html>
